@@ -40,14 +40,21 @@ console.log(divi(p,b));
 
 var x = [["Dye", 1], ["Hair", 2]];
 
-var y = [["Juice", 5] ["Fan", 6]];
+var e = [["Juice", 5], ["Fan", 9]];
 
 var z = [["Boy", 3], ["Girl", 4]];
 
 //
 
-function x(arg9, arg10) {
-x.push(["Toy", 8]);
-}
-
+x.push(["Cow", 7]);
 console.log(x);
+
+// ASK DAVID
+
+var notE = e.shift();
+console.log(e);
+
+//
+
+var notZ = z.pop();
+console.log(z);
