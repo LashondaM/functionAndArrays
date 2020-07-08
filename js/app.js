@@ -46,15 +46,30 @@ var z = [["Boy", 3], ["Girl", 4]];
 
 //
 
-x.push(["Cow", 7]);
-console.log(x);
-
-// ASK DAVID
-
-var notE = e.shift();
-console.log(e);
+function shiftAnArray(argumentA){
+    argumentA.shift();
+    return argumentA
+}
+console.log(shiftAnArray(e))
 
 //
 
-var notZ = z.pop();
-console.log(z);
+function pushAnArray (argumentOne, argumentTwo){
+    console.log('the array before pushing is: ', argumentOne)
+    argumentOne.push(argumentTwo);
+    console.log('The array AFTER pushing is : ', argumentOne)
+        return argumentOne
+}
+
+pushAnArray(x, [88])
+
+console.log(pushAnArray(x,'1'))
+
+//
+
+function popAnArray(argumentAlpha){
+    argumentAlpha.pop();
+    return argumentAlpha
+}
+
+console.log(popAnArray(z))
